@@ -1,0 +1,15 @@
+{
+  "name": "calculator-practice-project",
+  "version": "1.0.0",
+  "description": "This repository is provided for students looking to work on a simple calculator web application as a practice project.",
+  "main": "script.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2",
+    "jasmine": "^5.5.0"
+  }
+}
