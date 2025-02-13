@@ -152,3 +152,6 @@ function handleEqualsClick() {
    See README.md and TASKS.md for some guidance or book a session with Nigel on Preply.
 
 */
+
+
+export { currentInput, currentOperator, previousValue, handleOperatorClick, handleNumberClick, handleClearClick, handleEqualsClick };
