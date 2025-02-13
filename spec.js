@@ -1,4 +1,4 @@
-import { currentInput, currentOperator, previousValue, handleOperatorClick, handleNumberClick, handleClearClick, handleEqualsClick } from './script.js';
+import { handleOperatorClick, handleNumberClick, handleClearClick, handleEqualsClick } from './script.js';
 
 
 // spec.js
