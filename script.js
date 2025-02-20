@@ -84,14 +84,16 @@ let currentOperator = null; /// '+', '-', '*', '/'
 
 //handle operator clicks
 
+
 function handleOperatorClick(operator) {  //+
     console.log('Operator Clicked', operator);
-    previousValue = currentInput;
+    previousValue = currentInput.toString();
     currentInput = '';
     currentOperator = operator;
-    console.log(previousValue);
-    console.log(currentInput);
-    console.log(currentOperator);
+    console.log(" ")
+    console.log("previousValue",previousValue);
+    console.log("currentInput",currentInput);
+    console.log("currentOpperator",currentOperator);
     
 }
 //apply the calculation to the CurrentInput, havent go second input.
@@ -103,17 +105,19 @@ function handleOperatorClick(operator) {  //+
 //handle the number button clicks
 function handleNumberClick(number) {
     currentInput = currentInput + number;
-    display.innerText = currentInput;
-    console.log(previousValue);
-    console.log(currentInput);
-    console.log(currentOperator)
+    display.innerText = currentInput.toString();
+    console.log(" ")
+    console.log("previousValue",previousValue);
+    console.log("currentInput",currentInput);
+    console.log("currentOpperator",currentOperator);
+    
 }
 
 //Handle the Clear Button Click
 
 function handleClearClick() {
     currentInput = ''; //changed
-    display.innerText = currentInput;
+    display.innerText = currentInput.toString();
 }
 
 
@@ -134,13 +138,18 @@ function handleEqualsClick() {  //=
     else if (currentOperator === 'divide') {
         result = previousValue / currentInput;
     }
-     currentInput = '' //changed
+     //currentInput = '' //changed
+     currentInput = result.toString();
     //currentInput = result //changed
-    display.innerText = result;
+    display.innerText = result.toString();
+    previousValue = null; // Reset previousValue
+    currentOperator = null; // Reset currentOperator
     console.log (result)
-    console.log(previousValue);
-    console.log(currentInput);
-    console.log(currentOperator)
+    console.log(" ")
+    console.log("previousValue",previousValue);
+    console.log("currentInput",currentInput);
+    console.log("currentOpperator",currentOperator);
+    
 }
 
 // handleEqualsClick is going to perform the calculation using previous value current operator and current Input
