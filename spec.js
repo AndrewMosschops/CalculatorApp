@@ -1,4 +1,4 @@
-import { handleOperatorClick, handleNumberClick, handleClearClick, handleEqualsClick } from './script.js';
+import { currentOperator, previousValue, currentInput, handleOperatorClick, handleNumberClick, handleClearClick, handleEqualsClick } from './script.js';
 
 
 // spec.js
@@ -17,21 +17,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     describe("Calculator", function () {
         // let display;
-        let currentInput;
-        let previousValue;
-        let currentOperator;
+        // let currentInput;
+        // let previousValue;
+        // let currentOperator;
 
         beforeEach(function () {
-            //     // Set up a minimal DOM environment for testing
-            //     // document.body.innerHTML = `
-            //     //     <div class="display" id="display"></div>
-            //     // `;
-            //     // display = document.getElementById("display");
+                // Set up a minimal DOM environment for testing
+                // document.body.innerHTML = `
+                //     <div class="display" id="display"></div>
+                // `;
+                // display = document.getElementById("display");
 
             // // Reset calculator state before each test
-            currentInput = '';
-            previousValue = null;
-            currentOperator = null;
+            // currentInput = '';
+            // previousValue = null;
+            // currentOperator = null;
         });
 
         describe("userClick", function () {
@@ -112,7 +112,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 handleNumberClick(2);
                 expect(currentInput).toBe('12');
-                expect(display.innerText).toBe('13');
+                // expect(display.innerText).toBe('13'); //changed
+                expect(display.innerText).toBe('12');
+
             });
         });
 

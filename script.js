@@ -63,17 +63,17 @@ document.getElementById("btnClear").addEventListener("click", function() {
  * State
  * Track the current number or expression being entered:
  */
-let currentInput = '';
+let currentInput = ''; //number
 
 /*
  * Store the last entered number before an operation:
  */
-let previousValue = null;
+let previousValue = null;  //number
 
  /*
  * Track the selected mathematical operation (e.g. +, -, * /);
  */
-let currentOperator = null;
+let currentOperator = null; /// '+', '-', '*', '/'
 
 
 // TODO: Use this section to declare state variables
@@ -84,11 +84,15 @@ let currentOperator = null;
 
 //handle operator clicks
 
-function handleOperatorClick(operator) {
+function handleOperatorClick(operator) {  //+
     console.log('Operator Clicked', operator);
     previousValue = currentInput;
     currentInput = '';
     currentOperator = operator;
+    console.log(previousValue);
+    console.log(currentInput);
+    console.log(currentOperator);
+    
 }
 //apply the calculation to the CurrentInput, havent go second input.
 //input before operator clicked, store it (currentInput) as previousValue
@@ -100,20 +104,24 @@ function handleOperatorClick(operator) {
 function handleNumberClick(number) {
     currentInput = currentInput + number;
     display.innerText = currentInput;
+    console.log(previousValue);
+    console.log(currentInput);
+    console.log(currentOperator)
 }
 
 //Handle the Clear Button Click
 
 function handleClearClick() {
-    currentInput = '';
+    currentInput = ''; //changed
     display.innerText = currentInput;
 }
 
 
 //Handle the Equals Button Click
 
-function handleEqualsClick() {
+function handleEqualsClick() {  //=
     let result;
+
     if (currentOperator === 'plus') {
         result = +previousValue + +currentInput;
     }
@@ -126,9 +134,13 @@ function handleEqualsClick() {
     else if (currentOperator === 'divide') {
         result = previousValue / currentInput;
     }
-
+     currentInput = '' //changed
+    //currentInput = result //changed
     display.innerText = result;
     console.log (result)
+    console.log(previousValue);
+    console.log(currentInput);
+    console.log(currentOperator)
 }
 
 // handleEqualsClick is going to perform the calculation using previous value current operator and current Input
