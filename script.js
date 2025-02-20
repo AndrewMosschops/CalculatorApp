@@ -142,9 +142,10 @@ function handleEqualsClick() {  //=
      currentInput = result.toString();
     //currentInput = result //changed
     display.innerText = result.toString();
-    previousValue = null; // Reset previousValue
+   // previousValue= result.toString();
+    //previousValue = null; // Reset previousValue
     currentOperator = null; // Reset currentOperator
-    currentInput = '';
+    //currentInput = '';                                         // this makes it work
     console.log (result)
     console.log(" ")
     console.log("previousValue",previousValue);
