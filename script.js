@@ -144,6 +144,7 @@ function handleEqualsClick() {  //=
     display.innerText = result.toString();
     previousValue = null; // Reset previousValue
     currentOperator = null; // Reset currentOperator
+    currentInput = '';
     console.log (result)
     console.log(" ")
     console.log("previousValue",previousValue);

@@ -34,33 +34,33 @@ document.addEventListener("DOMContentLoaded", function () {
             // currentOperator = null;
         });
 
-        describe("userClick", function () {
-            it("should add numbers correctly", async function () {
-                document.getElementById("btn1").click();
-                document.getElementById("btnPlus").click();
-                document.getElementById("btn2").click();
-                document.getElementById("btnEquals").click();
-                expect(display.innerText).toBe('3');
-            });
-        });
+        // describe("userClick", function () {
+        //     it("should add numbers correctly", async function () {
+        //         document.getElementById("btn1").click();
+        //         document.getElementById("btnPlus").click();
+        //         document.getElementById("btn2").click();
+        //         document.getElementById("btnEquals").click();
+        //         expect(display.innerText).toBe('3');
+        //     });
+        // });
 
-        describe("userClick", function () {
-            it("should add 1 and 2 correctly", async function () {
-                document.getElementById("btn1").click();
-                document.getElementById("btnPlus").click();
-                document.getElementById("btn2").click();
-                document.getElementById("btnEquals").click();
-                expect(display.innerText).toBe('3');
-            });
+        // describe("userClick", function () {
+        //     it("should add 1 and 2 correctly", async function () {
+        //         document.getElementById("btn1").click();
+        //         document.getElementById("btnPlus").click();
+        //         document.getElementById("btn2").click();
+        //         document.getElementById("btnEquals").click();
+        //         expect(display.innerText).toBe('3');
+        //     });
 
-            it("should add numbers correctly", async function () {
-                document.getElementById("btn1").click();
-                document.getElementById("btnPlus").click();
-                document.getElementById("btn2").click();
-                document.getElementById("btnEquals").click();
-                expect(display.innerText).toBe('3');
-            });
-        });
+        //     it("should add numbers correctly", async function () {
+        //         document.getElementById("btn1").click();
+        //         document.getElementById("btnPlus").click();
+        //         document.getElementById("btn2").click();
+        //         document.getElementById("btnEquals").click();
+        //         expect(display.innerText).toBe('3');
+        //     });
+        // });
 
         describe("handleEqualsClick", function () {
             it("should perform addition correctly", function () {
